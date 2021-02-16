@@ -2,20 +2,13 @@
   background-color: #fff;
 
   &__list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    column-gap: 20px;
+
     margin: 0;
     padding: 0;
-    width: 100%;
     list-style: none;
-  }
-
-  &__item {
-    margin-right: 20px;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
   }
 
   &__link {
