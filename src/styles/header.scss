@@ -1,7 +1,12 @@
 .header {
-  @include flex-container;
+  display: grid;
+  grid-template-columns: 40px auto;
 
+  // aligns logo and nav to opposite sides of header;
+  justify-content: space-between;
+  // vertically aligns logo;
   align-items: center;
+
   height: 60px;
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
