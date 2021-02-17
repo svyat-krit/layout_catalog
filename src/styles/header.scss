@@ -2,9 +2,7 @@
   display: grid;
   grid-template-columns: 40px auto;
 
-  // aligns logo and nav to opposite sides of header;
   justify-content: space-between;
-  // vertically aligns logo;
   align-items: center;
 
   height: 60px;

@@ -6,10 +6,12 @@
   &__star {
     width: $star-width;
     height: $star-height;
-    background: center no-repeat url(../images/star-active.svg);
+    background: center no-repeat url(../images/star.svg);
   }
 
-  & .star-inactive {
-    background-image: url(../images/star.svg);
+  @for $number from 1 to 5 {
+    &--#{$number} > .stars__star:nth-child(-n + #{$number}) {
+      background-image: url(../images/star-active.svg);
+    }
   }
 }
